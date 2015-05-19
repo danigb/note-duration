@@ -1,0 +1,31 @@
+{
+  "name": "note-duration",
+  "version": "1.0.0",
+  "description": "Parse note durations",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danigb/note-duration.git"
+  },
+  "keywords": [
+    "note",
+    "duration",
+    "time",
+    "signature",
+    "music",
+    "theory",
+    "solfege"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/note-duration/issues"
+  },
+  "homepage": "https://github.com/danigb/note-duration",
+  "devDependencies": {
+    "vows": "^0.8.1"
+  }
+}
