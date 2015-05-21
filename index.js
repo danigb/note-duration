@@ -21,11 +21,11 @@ names.forEach(function(name, index) {
 });
 
 var duration = function(name) {
-  if(typeof(name) === 'string') {
-    return namesToValues[name];
-  } else {
-    return valuesToNames["" + name];
-  }
+  return namesToValues[name.toString()];
+}
+
+duration.toString = function(value) {
+  return valuesToNames[value.toString()];
 }
 
 module.exports = duration;

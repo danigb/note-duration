@@ -37,27 +37,27 @@ vows.describe('time').addBatch({
     assert.equal(duration('s.'), 1/16 + 1/32);
     assert.equal(duration('s..'), 1/16 + 1/32 + 1/64);
   },
-  "symbol from value": function() {
-    assert.equal(duration(4), 'l');
-    assert.equal(duration(4 + 2), 'l.');
-    assert.equal(duration(4 + 2 + 1), 'l..');
-    assert.equal(duration(2), 'd');
-    assert.equal(duration(2 + 1), 'd.');
-    assert.equal(duration(2 + 1 + 1/2), 'd..');
-    assert.equal(duration(1), 'w');
-    assert.equal(duration(1 + 1/2), 'w.');
-    assert.equal(duration(1 + 1/2 + 1/4), 'w..');
-    assert.equal(duration(1/2), 'h');
-    assert.equal(duration(1/2 + 1/4), 'h.');
-    assert.equal(duration(1/2 + 1/4 + 1/8), 'h..');
-    assert.equal(duration(1/4), 'q');
-    assert.equal(duration(1/4 + 1/8), 'q.');
-    assert.equal(duration(1/4 + 1/8 + 1/16), 'q..');
-    assert.equal(duration(1/8), 'e');
-    assert.equal(duration(1/8 + 1/16), 'e.');
-    assert.equal(duration(1/8 + 1/16 + 1/32), 'e..');
-    assert.equal(duration(1/16), 's');
-    assert.equal(duration(1/16 + 1/32), 's.');
-    assert.equal(duration(1/16 + 1/32 + 1/64), 's..');
+  "toString": function() {
+    assert.equal(duration.toString(4), 'l');
+    assert.equal(duration.toString(4 + 2), 'l.');
+    assert.equal(duration.toString(4 + 2 + 1), 'l..');
+    assert.equal(duration.toString(2), 'd');
+    assert.equal(duration.toString(2 + 1), 'd.');
+    assert.equal(duration.toString(2 + 1 + 1/2), 'd..');
+    assert.equal(duration.toString(1), 'w');
+    assert.equal(duration.toString(1 + 1/2), 'w.');
+    assert.equal(duration.toString(1 + 1/2 + 1/4), 'w..');
+    assert.equal(duration.toString(1/2), 'h');
+    assert.equal(duration.toString(1/2 + 1/4), 'h.');
+    assert.equal(duration.toString(1/2 + 1/4 + 1/8), 'h..');
+    assert.equal(duration.toString(1/4), 'q');
+    assert.equal(duration.toString(1/4 + 1/8), 'q.');
+    assert.equal(duration.toString(1/4 + 1/8 + 1/16), 'q..');
+    assert.equal(duration.toString(1/8), 'e');
+    assert.equal(duration.toString(1/8 + 1/16), 'e.');
+    assert.equal(duration.toString(1/8 + 1/16 + 1/32), 'e..');
+    assert.equal(duration.toString(1/16), 's');
+    assert.equal(duration.toString(1/16 + 1/32), 's.');
+    assert.equal(duration.toString(1/16 + 1/32 + 1/64), 's..');
   }
 }).export(module);

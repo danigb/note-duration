@@ -1,6 +1,7 @@
 # note-duration
 
-Parse note durations. It can convert from name to value and from value to name.
+Parse note durations. It can convert from name to
+[value](http://en.wikipedia.org/wiki/Note_value) and viceversa.
 
 ## Usage
 
@@ -35,11 +36,11 @@ duration("q.");  // => 1/4 + 1/8
 duration("q.."); // => 1/4 + 1/8 + 1/16
 ```
 
-And can convert from value to letter and dots:
+The `duration.toString` method does the opposite: convert from value to names:
 
 ```js
-duration(1/2 + 1/4);        // => "h."
-duration(1/4 + 1/2 + 1/8);  // => "q.."
+duration.toString(1/2 + 1/4);        // => "h."
+duration.toString(1/4 + 1/2 + 1/8);  // => "q.."
 ```
 
 ## License
