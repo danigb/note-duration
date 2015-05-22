@@ -21,11 +21,11 @@ names.forEach(function(name, index) {
 });
 
 var duration = function(name) {
-  return namesToValues[name.toString()];
+  return namesToValues['' + name];
 }
 
 duration.toString = function(value) {
-  return valuesToNames[value.toString()];
+  return valuesToNames['' + value];
 }
 
 module.exports = duration;

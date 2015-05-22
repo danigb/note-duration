@@ -4,6 +4,10 @@ assert = require('assert');
 duration = require('..');
 
 vows.describe('time').addBatch({
+  "null as parameter": function() {
+    assert.equal(duration(null), null);
+    assert.equal(duration.toString(null), null);
+  },
   "value from name": function() {
     assert.equal(duration('long'), 4);
     assert.equal(duration('double'), 2);

@@ -1,3 +1,9 @@
+[MASTER]
+
+
+[1.1.1]
+- duration(null) returns null
+- duration.toString(null) returns null
 
 [1.1.0]
 - Change API: add toString method.
