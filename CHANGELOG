@@ -1,5 +1,7 @@
 [MASTER]
 
+[1.2.0]
+- duration can be expressed in numbers (duration(4) == 0.25)
 
 [1.1.1]
 - duration(null) returns null

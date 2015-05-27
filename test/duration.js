@@ -41,6 +41,29 @@ vows.describe('time').addBatch({
     assert.equal(duration('s.'), 1/16 + 1/32);
     assert.equal(duration('s..'), 1/16 + 1/32 + 1/64);
   },
+  "value from number": function() {
+    assert.equal(duration('0.25'), 4);
+    assert.equal(duration('0.25.'), 4 + 2);
+    assert.equal(duration('0.25..'), 4 + 2 + 1);
+    assert.equal(duration('0.5'), 2);
+    assert.equal(duration('0.5.'), 2 + 1);
+    assert.equal(duration('0.5..'), 2 + 1 + 1/2);
+    assert.equal(duration('1'), 1);
+    assert.equal(duration('1.'), 1 + 1/2);
+    assert.equal(duration('1..'), 1 + 1/2 + 1/4);
+    assert.equal(duration('2'), 1/2);
+    assert.equal(duration('2.'), 1/2 + 1/4);
+    assert.equal(duration('2..'), 1/2 + 1/4 + 1/8);
+    assert.equal(duration('4'), 1/4);
+    assert.equal(duration('4.'), 1/4 + 1/8);
+    assert.equal(duration('4..'), 1/4 + 1/8 + 1/16);
+    assert.equal(duration('8'), 1/8);
+    assert.equal(duration('8.'), 1/8 + 1/16);
+    assert.equal(duration('8..'), 1/8 + 1/16 + 1/32);
+    assert.equal(duration('16'), 1/16);
+    assert.equal(duration('16.'), 1/16 + 1/32);
+    assert.equal(duration('16..'), 1/16 + 1/32 + 1/64);
+  },
   "toString": function() {
     assert.equal(duration.toString(4), 'l');
     assert.equal(duration.toString(4 + 2), 'l.');

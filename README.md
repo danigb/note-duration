@@ -36,7 +36,19 @@ duration("q.");  // => 1/4 + 1/8
 duration("q.."); // => 1/4 + 1/8 + 1/16
 ```
 
-The `duration.toString` method does the opposite: convert from value to names:
+From number string to value:
+
+```js
+duration("2");   // => 1/2
+duration("2.");  // => 1/2 + 1/4
+duration("2.."); // => 1/2 + 1/4 + 1/8
+duration("4");   // => 1/4
+duration("4.");  // => 1/4 + 1/8
+duration("4.."); // => 1/4 + 1/8 + 1/16
+```
+
+
+The `duration.toString` method does the opposite: convert from value to letter and dots:
 
 ```js
 duration.toString(1/2 + 1/4);        // => "h."
