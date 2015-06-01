@@ -1,5 +1,9 @@
 [MASTER]
 
+[1.3.0]
+- Add triplets
+- Move to standard js style
+
 [1.2.0]
 - duration can be expressed in numbers (duration(4) == 0.25)
 

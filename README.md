@@ -1,5 +1,9 @@
 # note-duration
 
+[![Code Climate](https://codeclimate.com/github/danigb/note-duration/badges/gpa.svg)](https://codeclimate.com/github/danigb/note-duration)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
+
 Parse note durations. It can convert from name to
 [value](http://en.wikipedia.org/wiki/Note_value) and viceversa.
 
