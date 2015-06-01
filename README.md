@@ -33,22 +33,26 @@ From letter and dots to values:
 
 ```js
 duration("h");   // => 1/2
-duration("h.");  // => 1/2 + 1/4
-duration("h.."); // => 1/2 + 1/4 + 1/8
+duration("h.");  // => dot: 1/2 + 1/4
+duration("h.."); // => double dot: 1/2 + 1/4 + 1/8
+duration("ht");  // => triplet: (1/2 + 1/ 2) / 3
 duration("q");   // => 1/4
-duration("q.");  // => 1/4 + 1/8
-duration("q.."); // => 1/4 + 1/8 + 1/16
+duration("q.");  // => dot: 1/4 + 1/8
+duration("q.."); // => double dot: 1/4 + 1/8 + 1/16
+duration("qt");  // => triplet: (1/4 + 1/4) / 3
 ```
 
 From number string to value:
 
 ```js
 duration("2");   // => 1/2
-duration("2.");  // => 1/2 + 1/4
-duration("2.."); // => 1/2 + 1/4 + 1/8
+duration("2.");  // => dot: 1/2 + 1/4
+duration("2t");  // => triplet: (1/2 + 1/ 2) / 3
+duration("2.."); // => double dot: 1/2 + 1/4 + 1/8
 duration("4");   // => 1/4
-duration("4.");  // => 1/4 + 1/8
-duration("4.."); // => 1/4 + 1/8 + 1/16
+duration("4.");  // => dot: 1/4 + 1/8
+duration("4.."); // => double dot: 1/4 + 1/8 + 1/16
+duration("4t");  // => triplet: (1/4 + 1/4) / 3
 ```
 
 

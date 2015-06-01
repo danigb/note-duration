@@ -64,6 +64,9 @@ vows.describe('time').addBatch({
     assert.equal(duration('16.'), 1 / 16 + 1 / 32)
     assert.equal(duration('16..'), 1 / 16 + 1 / 32 + 1 / 64)
   },
+  'triplets': function() {
+    assert.equal(duration('qt'), (1 / 4 + 1 / 4 ) / 3);
+  },
   'toString': function () {
     assert.equal(duration.toString(4), 'l')
     assert.equal(duration.toString(4 + 2), 'l.')

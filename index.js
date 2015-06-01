@@ -13,6 +13,7 @@ for (var i = 0; i < values.length; i++) {
   namesToValues[short] = namesToValues[num] = value
   namesToValues[short + '.'] = namesToValues[num + '.'] = value + value / 2
   namesToValues[short + '..'] = namesToValues[num + '..'] = value + value / 2 + value / 4
+  namesToValues[short + 't'] = namesToValues[num + 't'] = (value + value) / 3
 }
 
 var valuesToNames = {}
