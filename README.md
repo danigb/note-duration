@@ -1,5 +1,8 @@
 # note-duration
 
+
+#### Deprecated: use [tonal](http://github.com/danigb/tonal) (tonal/duration)
+
 [![Code Climate](https://codeclimate.com/github/danigb/note-duration/badges/gpa.svg)](https://codeclimate.com/github/danigb/note-duration)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
